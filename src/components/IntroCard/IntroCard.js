@@ -1,23 +1,23 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
-import styledWrapper from 'styled-components';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import Avatar from '@mui/material/Avatar';
 import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
-import LogoImg from '../../images/copystarr_logo.png';
+import { styled } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import * as React from 'react';
+import styledWrapper from 'styled-components';
 import AvatarImg from '../../images/copystarr_avatar.jpg';
+import LogoImg from '../../images/copystarr_logo.png';
 
 
 interface ExpandMoreProps extends IconButtonProps {
@@ -51,7 +51,7 @@ export default function RecipeReviewCard() {
           </Avatar>
         }
         title="Name: Aon Starr"
-        subheader="Email: [ aonstarr@copystarr.com ]"
+        subheader="(aonstarr@copystarr.com)"
         subheaderTypographyProps = {{color: '#EABA3F', fontSize: '20px' }}
         titleTypographyProps = {{ color: '#EABA3F', fontSize: '20px' }}
         style={{color: '#EABA3F', background: '#161616' }}
@@ -63,16 +63,10 @@ export default function RecipeReviewCard() {
           image={LogoImg}
           alt="Logo"
         />
-        {/* <CardMedia
-          component="img"
-          height="300"
-          image={AvatarImg}
-          alt="Avatar"
-        /> */}
       </CardMediaWrapper>
       <CardContent>
         <Typography sx={{ textAlign: 'center' }} variant="h3" color="text.primary">
-          --- Freelance Email Copywriter ---
+          Freelance Copywriter
         </Typography>
       </CardContent>
       <CardActions disableSpacing style={{background: '#161616'}}>
@@ -86,25 +80,26 @@ export default function RecipeReviewCard() {
             <TwitterIcon style={{color: '#EABA3F' }}  />
           </Link>
         </IconButton>
-        <ExpandMore
-          expand={expanded}
+        
+        {/* <ExpandMore
+          expand={true}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
         >
           <ExpandMoreIcon style={{color: '#EABA3F' }}/>
-        </ExpandMore>
+        </ExpandMore> */}
       </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+      <Collapse in={true} timeout="auto" unmountOnExit>
       <CardContent>
         <Typography sx={{ textAlign: 'center' }} variant="h3" color="text.primary">
-          --- Sevices ---
+          <ServicesTitle>
+          Sevices
+          </ServicesTitle>
+          
         </Typography>
         <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
-          Social Media Marketing
-        </Typography>
-        <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
-          Email Marketing
+          Email Copy
         </Typography>
         <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
           Sales Pages
@@ -114,6 +109,9 @@ export default function RecipeReviewCard() {
         </Typography>
         <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
           Facebook Ads
+        </Typography>
+        <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
+          Twitter Posts
         </Typography>
       </CardContent>
       </Collapse>
@@ -129,4 +127,11 @@ const CardMediaWrapper = styledWrapper.div`
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   padding: 1rem;
+`;
+
+const ServicesTitle = styledWrapper.span`
+  display: inline-block;
+  width 100%;
+  color: #E9BA3F;
+  margin-bottom: 1rem;
 `;
