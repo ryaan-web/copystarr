@@ -102,16 +102,13 @@ export default function RecipeReviewCard() {
           Email Copy
         </Typography>
         <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
-          Sales Pages
-        </Typography>
-        <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
           Sequential Emails
         </Typography>
         <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
           Facebook Ads
         </Typography>
         <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
-          Twitter Posts
+          Twitter management
         </Typography>
       </CardContent>
       </Collapse>

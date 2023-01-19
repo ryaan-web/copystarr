@@ -111,7 +111,7 @@ export default function Testimonials() {
           </CardContent>
         </TestimonialCard>
 
-        <TestimonialCard>
+        {/* <TestimonialCard>
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -140,7 +140,7 @@ export default function Testimonials() {
               just get things done but also teach and discuss how and why a certain approach was taken.
             </Typography>
           </CardContent>
-        </TestimonialCard>
+        </TestimonialCard> */}
       </CardContent>
       </Collapse>
     </Card>
