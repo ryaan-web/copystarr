@@ -47,8 +47,8 @@ export default function RecipeReviewCard() {
       <CardHeader sx={{ padding: '2rem'}}
         title="Direct Response Copywriter"
         subheader="Reach me at aonstarr@copystarr.com"
-        subheaderTypographyProps = {{color: '#EABA3F', fontSize: '20px', textAlign: 'center' }}
-        titleTypographyProps = {{ color: '#EABA3F', fontSize: '25px', textAlign: 'center' }}
+        subheaderTypographyProps = {{color: '#EABA3F', fontSize: '18px', textAlign: 'center' }}
+        titleTypographyProps = {{ color: '#EABA3F', fontSize: '24px', textAlign: 'center' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardMediaWrapper>
