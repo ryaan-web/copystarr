@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Collapse from '@mui/material/Collapse';
-import { red } from '@mui/material/colors';
+import { grey, red } from '@mui/material/colors';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
@@ -43,7 +43,7 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <Card sx={{ maxWidth: 900 , margin: '3rem auto' }}>
+    <CardWrapper sx={{ maxWidth: 900 , margin: '3rem auto' }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -91,7 +91,7 @@ export default function RecipeReviewCard() {
         </ExpandMore> */}
       </CardActions>
       <Collapse in={true} timeout="auto" unmountOnExit>
-      <CardContent>
+      <CardContent sx={{ bgcolor: grey[400] }}>
         <Typography sx={{ textAlign: 'center' }} variant="h3" color="text.primary">
           <ServicesTitle>
           Sevices
@@ -112,9 +112,13 @@ export default function RecipeReviewCard() {
         </Typography>
       </CardContent>
       </Collapse>
-    </Card>
+    </CardWrapper>
   );
 }
+
+const CardWrapper = styledWrapper(Card)`
+  background: #000;
+`;
 
 const CardMediaWrapper = styledWrapper.div`
   display: flex;
@@ -124,6 +128,8 @@ const CardMediaWrapper = styledWrapper.div`
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   padding: 1rem;
+  background: #000;
+  margin-left: -0.1rem;
 `;
 
 const ServicesTitle = styledWrapper.span`

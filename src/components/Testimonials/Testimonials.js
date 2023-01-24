@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Collapse from '@mui/material/Collapse';
-import { red } from '@mui/material/colors';
+import { grey, red, yellow } from '@mui/material/colors';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
@@ -78,11 +78,11 @@ export default function Testimonials() {
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-      <CardContent>
+      <CardContent sx={{ bgcolor: grey[400], padding: '1rem' }}>
         <TestimonialCard>
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+              <Avatar sx={{ bgcolor: yellow[900] }} aria-label="recipe">
                 KL
               </Avatar>
             }
@@ -97,12 +97,12 @@ export default function Testimonials() {
             titleTypographyProps = {{ color: '#EEE', fontSize: '16px' }}
             style={{color: '#EABA3F', background: '#161616' }}
           />
-          <CardContent>
+          <CardContent sx={{ bgcolor: grey[700], padding: '1rem' }}>
             <Typography sx={{ 
               textAlign: 'left', 
               fontSize: '18px', 
               background: 'lightgrey',
-              padding: '1rem',
+              padding: '0.5rem',
               borderRadius: '0.5rem' }} variant="h5" color="text.primary">
               Aon reached out to me randomly and started giving me insights on my business that 
               I had never thought of during last 10 years of my operations.
