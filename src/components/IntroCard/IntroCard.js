@@ -43,7 +43,7 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <CardWrapper sx={{ maxWidth: 900 , margin: '3rem auto' }}>
+    <CardWrapper sx={{ maxWidth: 900 , margin: '1rem auto' }}>
       <CardHeader sx={{ padding: '2rem'}}
         title="Direct Response Copywriter"
         subheader="Reach me at aonstarr@copystarr.com"
@@ -91,7 +91,7 @@ export default function RecipeReviewCard() {
       <Collapse in={true} timeout="auto" unmountOnExit>
       <CardContent sx={{ textAlign: 'center', background: grey[300] }}>
         <Typography variant="h3" color="text.primary">
-          <ServicesTitle sx={{ textAlign: 'center', textDecoration: 'underline' }}>
+          <ServicesTitle sx={{ textAlign: 'center', textDecoration: 'underline', color: yellow[900] }}>
             Sevices
           </ServicesTitle>
           
