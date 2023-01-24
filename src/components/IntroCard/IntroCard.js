@@ -45,10 +45,10 @@ export default function RecipeReviewCard() {
   return (
     <CardWrapper sx={{ maxWidth: 900 , margin: '3rem auto' }}>
       <CardHeader sx={{ padding: '2rem'}}
-        title="Direct Response Copywriting Services available"
+        title="Direct Response Copywriter"
         subheader="Reach me at aonstarr@copystarr.com"
         subheaderTypographyProps = {{color: '#EABA3F', fontSize: '20px', textAlign: 'center' }}
-        titleTypographyProps = {{ color: '#EABA3F', fontSize: '24px', textAlign: 'center' }}
+        titleTypographyProps = {{ color: '#EABA3F', fontSize: '25px', textAlign: 'center' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardMediaWrapper>
@@ -59,15 +59,15 @@ export default function RecipeReviewCard() {
           alt="Logo"
         />
       </CardMediaWrapper>
-      <CardContent>
+      {/* <CardContent>
         <Typography sx={{ textAlign: 'center' }} variant="h3" color="text.primary">
           Freelance Copywriter
         </Typography>
-      </CardContent>
+      </CardContent> */}
       <CardActions disableSpacing style={{background: '#161616'}}>
-        <span style={{ color: yellow[700], fontSize: '24px', lineHeight: '45px' }}>
+        {/* <span style={{ color: yellow[700], fontSize: '24px', lineHeight: '45px' }}>
           SOCIALS:
-        </span>
+        </span> */}
         <IconButton aria-label="instagram">
           <Link variant='a' href="https://www.instagram.com/copy_starr" target="_blank">
             <InstagramIcon style={{color: '#EABA3F' }} />
@@ -89,23 +89,23 @@ export default function RecipeReviewCard() {
         </ExpandMore> */}
       </CardActions>
       <Collapse in={true} timeout="auto" unmountOnExit>
-      <CardContent>
-        <Typography sx={{ textAlign: 'center' }} variant="h3" color="text.primary">
-          <ServicesTitle>
-          Sevices
+      <CardContent sx={{ textAlign: 'center', background: grey[300] }}>
+        <Typography variant="h3" color="text.primary">
+          <ServicesTitle sx={{ textAlign: 'center', textDecoration: 'underline' }}>
+            Sevices
           </ServicesTitle>
           
         </Typography>
-        <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
+        <Typography sx={{ textAlign: 'center', fontSize: '25px' }} variant="h4" color="text.primary">
           Email Copy
         </Typography>
-        <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
+        <Typography sx={{ textAlign: 'center', fontSize: '25px'  }} variant="h4" color="text.primary">
           Sequential Emails
         </Typography>
-        <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
+        <Typography sx={{ textAlign: 'center', fontSize: '25px'  }} variant="h4" color="text.primary">
           Facebook Ads
         </Typography>
-        <Typography sx={{ textAlign: 'center' }} variant="h4" color="text.primary">
+        <Typography sx={{ textAlign: 'center', fontSize: '25px'  }} variant="h4" color="text.primary">
           Twitter management
         </Typography>
       </CardContent>
