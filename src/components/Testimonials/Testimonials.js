@@ -53,9 +53,10 @@ export default function Testimonials() {
         title="Testimonials"
         titleTypographyProps = {{
           color: '#EABA3F',
-          fontSize: '20px',
-          fontFamily: 'Inknut Antiqua'
-        }}
+          fontSize: '23px',
+          textAlign: 'center',
+          lineHeight: '30px',
+          fontFamily: 'Inknut Antiqua' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardContent sx={{ textAlign: 'center', background: '#fbf1d9' }}>
@@ -111,8 +112,8 @@ export default function Testimonials() {
           />
           <CardContent sx={{ bgcolor: grey[700], padding: '1rem' }}>
             <Typography sx={{ 
-              textAlign: 'center', 
-              fontSize: '18px', 
+              textAlign: 'left', 
+              fontSize: '16px', 
               background: 'lightgrey',
               fontFamily: 'Inknut Antiqua',
               padding: '0.5rem',

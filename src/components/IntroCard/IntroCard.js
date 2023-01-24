@@ -19,7 +19,7 @@ import styledWrapper from 'styled-components';
 import AvatarImg from '../../images/copystarr_avatar.jpg';
 import LogoImg from '../../images/copystarr_logo.png';
 
-import { Autoplay, EffectCreative, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectCreative } from "swiper";
 import 'swiper/css';
 import "swiper/css/effect-creative";
 import "swiper/css/navigation";
@@ -57,14 +57,15 @@ export default function RecipeReviewCard() {
           color: '#EABA3F',
           fontSize: '18px',
           textAlign: 'center',
-          lineHeight: '20px',
+          lineHeight: '15px',
           fontFamily: 'Inknut Antiqua' }}
         titleTypographyProps = {{
           color: '#EABA3F',
-          fontSize: '23px',
+          fontSize: '17px',
           textAlign: 'center',
           lineHeight: '30px',
-          fontFamily: 'Inknut Antiqua' }}
+          fontFamily: 'Inknut Antiqua',
+          marginBottom: '0.5rem' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardMediaWrapper>
@@ -138,17 +139,20 @@ export default function RecipeReviewCard() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <ServicesSlideContainer>
+            <ServicesSlideContainer
+              style={{ lineHeight: '30px'}}>
               Email Copywriting
             </ServicesSlideContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <ServicesSlideContainer>
+            <ServicesSlideContainer
+              style={{ lineHeight: '30px'}}>
               Facebook Ads
             </ServicesSlideContainer>
           </SwiperSlide>
           <SwiperSlide>
-            <ServicesSlideContainer>
+            <ServicesSlideContainer
+              style={{ lineHeight: '30px'}}>
               Twitter Smartposts
             </ServicesSlideContainer>
           </SwiperSlide>
