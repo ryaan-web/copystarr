@@ -43,7 +43,7 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <CardWrapper sx={{ maxWidth: 900 , margin: '1rem auto' }}>
+    <CardWrapper sx={{ maxWidth: 1200 , margin: '1rem auto' }}>
       <CardHeader sx={{ padding: '2rem'}}
         title="Direct Response Copywriter"
         subheader="Reach me at aonstarr@copystarr.com"

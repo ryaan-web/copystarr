@@ -16,7 +16,7 @@ export default Hero;
 
 const HeroWrapper = styled.div`
   margin-top: 10vh;
-  padding: 2rem;
+  padding: 1rem;
   /* background: #777777; */
   background-image: url(BackgroundImg);
   background-repeat: repeat;
