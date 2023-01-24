@@ -15,7 +15,7 @@ const Hero = () => {
 export default Hero;
 
 const HeroWrapper = styled.div`
-  margin-top: 6vh;
+  margin-top: 10vh;
   padding: 2rem;
   /* background: #777777; */
   background-image: url(BackgroundImg);

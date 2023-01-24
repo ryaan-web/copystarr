@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import Collapse from '@mui/material/Collapse';
-import { grey, red } from '@mui/material/colors';
+import { grey, red, yellow } from '@mui/material/colors';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
 import { styled } from '@mui/material/styles';
@@ -44,16 +44,11 @@ export default function RecipeReviewCard() {
 
   return (
     <CardWrapper sx={{ maxWidth: 900 , margin: '3rem auto' }}>
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            AS
-          </Avatar>
-        }
-        title="Name: Aon Starr"
-        subheader="(aonstarr@copystarr.com)"
-        subheaderTypographyProps = {{color: '#EABA3F', fontSize: '20px' }}
-        titleTypographyProps = {{ color: '#EABA3F', fontSize: '20px' }}
+      <CardHeader sx={{ padding: '2rem'}}
+        title="Direct Response Copywriting Services available"
+        subheader="Reach me at aonstarr@copystarr.com"
+        subheaderTypographyProps = {{color: '#EABA3F', fontSize: '20px', textAlign: 'center' }}
+        titleTypographyProps = {{ color: '#EABA3F', fontSize: '24px', textAlign: 'center' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardMediaWrapper>
@@ -70,6 +65,9 @@ export default function RecipeReviewCard() {
         </Typography>
       </CardContent>
       <CardActions disableSpacing style={{background: '#161616'}}>
+        <span style={{ color: yellow[700], fontSize: '24px', lineHeight: '45px' }}>
+          SOCIALS:
+        </span>
         <IconButton aria-label="instagram">
           <Link variant='a' href="https://www.instagram.com/copy_starr" target="_blank">
             <InstagramIcon style={{color: '#EABA3F' }} />
@@ -91,7 +89,7 @@ export default function RecipeReviewCard() {
         </ExpandMore> */}
       </CardActions>
       <Collapse in={true} timeout="auto" unmountOnExit>
-      <CardContent sx={{ bgcolor: grey[400] }}>
+      <CardContent>
         <Typography sx={{ textAlign: 'center' }} variant="h3" color="text.primary">
           <ServicesTitle>
           Sevices

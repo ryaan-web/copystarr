@@ -158,5 +158,5 @@ const CardMediaWrapper = styledWrapper.div`
 `;
 
 const TestimonialCard = styled(Card)`
-  margin: 2rem;
+  margin: 0rem;
 `;
