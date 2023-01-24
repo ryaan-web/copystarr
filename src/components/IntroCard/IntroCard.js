@@ -19,6 +19,11 @@ import styledWrapper from 'styled-components';
 import AvatarImg from '../../images/copystarr_avatar.jpg';
 import LogoImg from '../../images/copystarr_logo.png';
 
+import { Autoplay, Navigation, Pagination } from "swiper";
+import 'swiper/css';
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
@@ -46,15 +51,15 @@ export default function RecipeReviewCard() {
     <CardWrapper sx={{ maxWidth: 1200 , margin: '1rem auto' }}>
       <CardHeader sx={{ padding: '2rem'}}
         title="Direct Response Copywriter"
-        subheader="Reach me at aonstarr@copystarr.com"
-        subheaderTypographyProps = {{color: '#EABA3F', fontSize: '18px', textAlign: 'center' }}
-        titleTypographyProps = {{ color: '#EABA3F', fontSize: '23px', textAlign: 'center' }}
+        subheader='Reach me at "aonstarr@copystarr.com"'
+        subheaderTypographyProps = {{color: '#EABA3F', fontSize: '18px', textAlign: 'center', lineHeight: '15px' }}
+        titleTypographyProps = {{ color: '#EABA3F', fontSize: '23px', textAlign: 'center', lineHeight: '30px' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardMediaWrapper>
         <CardMedia
           component="img"
-          height="300"
+          height="500"
           image={LogoImg}
           alt="Logo"
         />
@@ -89,25 +94,39 @@ export default function RecipeReviewCard() {
         </ExpandMore> */}
       </CardActions>
       <Collapse in={true} timeout="auto" unmountOnExit>
-      <CardContent sx={{ textAlign: 'center', background: grey[300] }}>
+      <CardContent sx={{ textAlign: 'center', bgcolor: grey[400] }}>
         <Typography variant="h3" color="text.primary">
-          <ServicesTitle sx={{ textAlign: 'center', textDecoration: 'underline', color: yellow[900] }}>
+          <ServicesTitle style={{ textAlign: 'center', textDecoration: 'underline', color: grey[900] }}>
             Sevices
           </ServicesTitle>
           
         </Typography>
-        <Typography sx={{ textAlign: 'center', fontSize: '25px' }} variant="h4" color="text.primary">
-          Email Copy
-        </Typography>
-        <Typography sx={{ textAlign: 'center', fontSize: '25px'  }} variant="h4" color="text.primary">
-          Sequential Emails
-        </Typography>
-        <Typography sx={{ textAlign: 'center', fontSize: '25px'  }} variant="h4" color="text.primary">
-          Facebook Ads
-        </Typography>
-        <Typography sx={{ textAlign: 'center', fontSize: '25px'  }} variant="h4" color="text.primary">
-          Twitter management
-        </Typography>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              Email Copywriting
+            </ServicesSlideContainer>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              Facebook Ads
+            </ServicesSlideContainer>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              Twitter Smartposts
+            </ServicesSlideContainer>
+          </SwiperSlide>
+        </Swiper>
       </CardContent>
       </Collapse>
     </CardWrapper>
@@ -136,3 +155,20 @@ const ServicesTitle = styledWrapper.span`
   color: #E9BA3F;
   margin-bottom: 1rem;
 `;
+
+const ServicesSlideContainer = styledWrapper.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 60%;
+  height: 5rem;
+  background: grey;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem;
+  -webkit-box-shadow: -10px 7px 16px -6px rgba(0,0,0,0.39);
+  -moz-box-shadow: -10px 7px 16px -6px rgba(0,0,0,0.39);
+  box-shadow: -10px 7px 16px -6px rgba(0,0,0,0.39);
+  border-radius: 5px;
+`

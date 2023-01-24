@@ -43,7 +43,7 @@ export default function Testimonials() {
   };
 
   return (
-    <Card sx={{ maxWidth: 900 , margin: '6rem auto' }}>
+    <Card sx={{ maxWidth: 1200 , margin: '6rem auto' }}>
       <CardHeader
         action={
           <IconButton aria-label="settings">
@@ -54,8 +54,8 @@ export default function Testimonials() {
         titleTypographyProps = {{ color: '#EABA3F', fontSize: '20px' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
-      <CardContent>
-        <Typography sx={{ textAlign: 'center' }} variant="h5" color="text.primary">
+      <CardContent sx={{ textAlign: 'center', background: '#fbf1d9' }}>
+        <Typography variant="h5" color="text.primary">
           I help businesses 5-10x their sales by providing high precision conversion copy.
           I have worked with various clients over a unique combination of niches that all complement each other.
 
