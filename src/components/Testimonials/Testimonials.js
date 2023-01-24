@@ -51,15 +51,19 @@ export default function Testimonials() {
           </IconButton>
         }
         title="Testimonials"
-        titleTypographyProps = {{ color: '#EABA3F', fontSize: '20px' }}
+        titleTypographyProps = {{
+          color: '#EABA3F',
+          fontSize: '20px',
+          fontFamily: 'Inknut Antiqua'
+        }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardContent sx={{ textAlign: 'center', background: '#fbf1d9' }}>
-        <Typography variant="h5" color="text.primary">
+        <span variant="h5" color="text.primary">
           I help businesses 5-10x their sales by providing high precision conversion copy.
           I have worked with various clients over a unique combination of niches that all complement each other.
 
-        </Typography>
+        </span>
       </CardContent>
       <CardActions disableSpacing style={{background: '#161616'}}>
         <span style={{ 
@@ -93,15 +97,24 @@ export default function Testimonials() {
             }
             title="Name: K. S. Luthra"
             subheader="(Tohima Filters)"
-            subheaderTypographyProps = {{color: '#EEE', fontSize: '16px' }}
-            titleTypographyProps = {{ color: '#EEE', fontSize: '16px' }}
+            subheaderTypographyProps = {{
+              color: '#EEE',
+              fontSize: '16px',
+              fontFamily: 'Inknut Antiqua'
+            }}
+            titleTypographyProps = {{
+              color: '#EEE',
+              fontSize: '16px',
+              fontFamily: 'Inknut Antiqua'
+            }}
             style={{color: '#EABA3F', background: '#161616' }}
           />
           <CardContent sx={{ bgcolor: grey[700], padding: '1rem' }}>
             <Typography sx={{ 
-              textAlign: 'left', 
+              textAlign: 'center', 
               fontSize: '18px', 
               background: 'lightgrey',
+              fontFamily: 'Inknut Antiqua',
               padding: '0.5rem',
               borderRadius: '0.5rem' }} variant="h5" color="text.primary">
               Aon reached out to me randomly and started giving me insights on my business that 
@@ -110,37 +123,6 @@ export default function Testimonials() {
             </Typography>
           </CardContent>
         </TestimonialCard>
-
-        {/* <TestimonialCard>
-          <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                VS
-              </Avatar>
-            }
-            action={
-              <IconButton aria-label="settings">
-                <MoreVertIcon />
-              </IconButton>
-            }
-            title="Name: V. Singh"
-            subheader="(Black Rose)"
-            subheaderTypographyProps = {{color: '#EEE', fontSize: '16px' }}
-            titleTypographyProps = {{ color: '#EEE', fontSize: '16px' }}
-            style={{color: '#EABA3F', background: '#161616' }}
-          />
-          <CardContent>
-            <Typography sx={{ 
-              textAlign: 'left', 
-              fontSize: '18px', 
-              background: 'lightgrey',
-              padding: '1rem',
-              borderRadius: '0.5rem' }} variant="h5" color="text.primary">
-              Very fast results! I am impressed. The best thing I like about you is that you don't
-              just get things done but also teach and discuss how and why a certain approach was taken.
-            </Typography>
-          </CardContent>
-        </TestimonialCard> */}
       </CardContent>
       </Collapse>
     </Card>

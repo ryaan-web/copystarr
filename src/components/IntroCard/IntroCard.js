@@ -19,8 +19,9 @@ import styledWrapper from 'styled-components';
 import AvatarImg from '../../images/copystarr_avatar.jpg';
 import LogoImg from '../../images/copystarr_logo.png';
 
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, EffectCreative, Navigation, Pagination } from "swiper";
 import 'swiper/css';
+import "swiper/css/effect-creative";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -52,14 +53,24 @@ export default function RecipeReviewCard() {
       <CardHeader sx={{ padding: '2rem'}}
         title="Direct Response Copywriter"
         subheader='Reach me at "aonstarr@copystarr.com"'
-        subheaderTypographyProps = {{color: '#EABA3F', fontSize: '18px', textAlign: 'center', lineHeight: '15px' }}
-        titleTypographyProps = {{ color: '#EABA3F', fontSize: '23px', textAlign: 'center', lineHeight: '30px' }}
+        subheaderTypographyProps = {{
+          color: '#EABA3F',
+          fontSize: '18px',
+          textAlign: 'center',
+          lineHeight: '20px',
+          fontFamily: 'Inknut Antiqua' }}
+        titleTypographyProps = {{
+          color: '#EABA3F',
+          fontSize: '23px',
+          textAlign: 'center',
+          lineHeight: '30px',
+          fontFamily: 'Inknut Antiqua' }}
         style={{color: '#EABA3F', background: '#161616' }}
       />
       <CardMediaWrapper>
         <CardMedia
           component="img"
-          height="500"
+          height="400"
           image={LogoImg}
           alt="Logo"
         />
@@ -96,7 +107,12 @@ export default function RecipeReviewCard() {
       <Collapse in={true} timeout="auto" unmountOnExit>
       <CardContent sx={{ textAlign: 'center', bgcolor: grey[400] }}>
         <Typography variant="h3" color="text.primary">
-          <ServicesTitle style={{ textAlign: 'center', textDecoration: 'underline', color: grey[900] }}>
+          <ServicesTitle style={{
+            textAlign: 'center',
+            textDecoration: 'underline',
+            color: grey[900],
+            fontFamily: 'Inknut Antiqua'
+          }}>
             Sevices
           </ServicesTitle>
           
@@ -108,7 +124,17 @@ export default function RecipeReviewCard() {
             delay: 1000,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay]}
+          creativeEffect={{
+            prev: {
+              shadow: true,
+              translate: [0, 0, -400],
+            },
+            next: {
+              translate: ["100%", 0, 0],
+            },
+          }}
+          loop={true}
+          modules={[Autoplay, EffectCreative]}
           className="mySwiper"
         >
           <SwiperSlide>
