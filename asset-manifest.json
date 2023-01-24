@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/copystarr/static/css/main.8c566105.css",
-    "main.js": "/copystarr/static/js/main.7d497918.js",
+    "main.css": "/copystarr/static/css/main.1655dc2a.css",
+    "main.js": "/copystarr/static/js/main.bd289481.js",
     "static/js/787.2ecfa296.chunk.js": "/copystarr/static/js/787.2ecfa296.chunk.js",
     "static/media/copystarr_logo.png": "/copystarr/static/media/copystarr_logo.2dd4744aa8b91c151f37.png",
     "static/media/copystarr_avatar.jpg": "/copystarr/static/media/copystarr_avatar.314833430234e1315fc3.jpg",
     "index.html": "/copystarr/index.html",
-    "main.8c566105.css.map": "/copystarr/static/css/main.8c566105.css.map",
-    "main.7d497918.js.map": "/copystarr/static/js/main.7d497918.js.map",
+    "main.1655dc2a.css.map": "/copystarr/static/css/main.1655dc2a.css.map",
+    "main.bd289481.js.map": "/copystarr/static/js/main.bd289481.js.map",
     "787.2ecfa296.chunk.js.map": "/copystarr/static/js/787.2ecfa296.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c566105.css",
-    "static/js/main.7d497918.js"
+    "static/css/main.1655dc2a.css",
+    "static/js/main.bd289481.js"
   ]
 }
