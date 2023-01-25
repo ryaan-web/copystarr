@@ -172,7 +172,6 @@ const CardMediaWrapper = styledWrapper.div`
   -webkit-box-shadow: -10px 7px 16px -6px rgba(0,0,0,0.39);
   -moz-box-shadow: -10px 7px 16px -6px rgba(0,0,0,0.39);
   box-shadow: -10px 7px 16px -6px rgba(0,0,0,0.39);
-  margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   padding: 1rem;
   background: #000;

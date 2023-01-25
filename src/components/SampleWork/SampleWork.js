@@ -72,6 +72,11 @@ export default function SampleWork() {
           grabCursor={true}
           modules={[EffectCards]}
           className="mySwiper"
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
         >
           <SwiperSlide>
             <ServicesSlideContainer>
