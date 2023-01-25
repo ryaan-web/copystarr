@@ -9,7 +9,14 @@ import * as React from 'react';
 import styledWrapper from 'styled-components';
 
 
-import LogoImg from '../../images/copystarr_logo.png';
+import Kitty1Img from '../../images/kitty.jpg';
+import Pro1Img from '../../images/pro1.png';
+import Pro2Img from '../../images/pro2.png';
+import Sentient1Img from '../../images/sentient1.png';
+import Sentient2Img from '../../images/sentient2.png';
+import Sentient3Img from '../../images/sentient3.png';
+import Sentient4Img from '../../images/sentient4.jpg';
+import StarrImg from '../../images/starr.jpg';
 import Work1Img from '../../images/work1.jpg';
 
 import { Autoplay, EffectCards, EffectCreative, Navigation, Pagination } from "swiper";
@@ -63,10 +70,93 @@ export default function SampleWork() {
           centeredSlides={true}
           effect={"cards"}
           grabCursor={true}
-          navigation={true}
           modules={[EffectCards]}
           className="mySwiper"
         >
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              <SampleImageContainer>
+                <CardMediaWrapper>
+                  <CardMedia
+                    component="img"
+                    height="auto"
+                    image={Sentient2Img}
+                    alt="Logo"
+                  />
+                </CardMediaWrapper>
+              </SampleImageContainer>
+            </ServicesSlideContainer>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              <SampleImageContainer>
+                <CardMediaWrapper>
+                <CardMedia
+                    component="img"
+                    height="auto"
+                    image={Sentient1Img}
+                    alt="Logo"
+                  />
+                </CardMediaWrapper>
+              </SampleImageContainer>
+            </ServicesSlideContainer>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              <SampleImageContainer>
+                <CardMediaWrapper>
+                <CardMedia
+                    component="img"
+                    height="auto"
+                    image={Kitty1Img}
+                    alt="Logo"
+                  />
+                </CardMediaWrapper>
+              </SampleImageContainer>
+            </ServicesSlideContainer>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              <SampleImageContainer>
+                <CardMediaWrapper>
+                  <CardMedia
+                    component="img"
+                    height="auto"
+                    image={Sentient3Img}
+                    alt="Logo"
+                  />
+                </CardMediaWrapper>
+              </SampleImageContainer>
+            </ServicesSlideContainer>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              <SampleImageContainer>
+                <CardMediaWrapper>
+                  <CardMedia
+                    component="img"
+                    height="auto"
+                    image={Pro1Img}
+                    alt="Logo"
+                  />
+                </CardMediaWrapper>
+              </SampleImageContainer>
+            </ServicesSlideContainer>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServicesSlideContainer>
+              <SampleImageContainer>
+                <CardMediaWrapper>
+                  <CardMedia
+                    component="img"
+                    height="auto"
+                    image={Pro2Img}
+                    alt="Logo"
+                  />
+                </CardMediaWrapper>
+              </SampleImageContainer>
+            </ServicesSlideContainer>
+          </SwiperSlide>
           <SwiperSlide>
             <ServicesSlideContainer>
               <SampleImageContainer>
@@ -85,10 +175,10 @@ export default function SampleWork() {
             <ServicesSlideContainer>
               <SampleImageContainer>
                 <CardMediaWrapper>
-                <CardMedia
+                  <CardMedia
                     component="img"
                     height="auto"
-                    image={LogoImg}
+                    image={StarrImg}
                     alt="Logo"
                   />
                 </CardMediaWrapper>
@@ -102,63 +192,7 @@ export default function SampleWork() {
                   <CardMedia
                     component="img"
                     height="auto"
-                    image={Work1Img}
-                    alt="Logo"
-                  />
-                </CardMediaWrapper>
-              </SampleImageContainer>
-            </ServicesSlideContainer>
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesSlideContainer>
-              <SampleImageContainer>
-                <CardMediaWrapper>
-                <CardMedia
-                    component="img"
-                    height="auto"
-                    image={LogoImg}
-                    alt="Logo"
-                  />
-                </CardMediaWrapper>
-              </SampleImageContainer>
-            </ServicesSlideContainer>
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesSlideContainer>
-              <SampleImageContainer>
-                <CardMediaWrapper>
-                  <CardMedia
-                    component="img"
-                    height="auto"
-                    image={Work1Img}
-                    alt="Logo"
-                  />
-                </CardMediaWrapper>
-              </SampleImageContainer>
-            </ServicesSlideContainer>
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesSlideContainer>
-              <SampleImageContainer>
-                <CardMediaWrapper>
-                <CardMedia
-                    component="img"
-                    height="auto"
-                    image={LogoImg}
-                    alt="Logo"
-                  />
-                </CardMediaWrapper>
-              </SampleImageContainer>
-            </ServicesSlideContainer>
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServicesSlideContainer>
-              <SampleImageContainer>
-                <CardMediaWrapper>
-                  <CardMedia
-                    component="img"
-                    height="auto"
-                    image={Work1Img}
+                    image={Sentient4Img}
                     alt="Logo"
                   />
                 </CardMediaWrapper>
